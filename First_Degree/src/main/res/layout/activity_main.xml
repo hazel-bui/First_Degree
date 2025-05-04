@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#FFFFFF"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -29,17 +30,19 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="@string/title_app"
-            android:textColor="#E21212"
-            android:textSize="20sp" />
+            android:textColor="#1A73E8"
+            android:textSize="22sp"
+            android:fontFamily="sans-serif-medium" />
     </LinearLayout>
-
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#4DFFB2"
-        android:text="@string/title_coefficient_a" />
+        android:background="#D0F0C0"
+        android:text="@string/title_coefficient_a"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif" />
 
     <EditText
         android:id="@+id/edtCoefficientA"
@@ -47,14 +50,18 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="text"
-        android:text="Name" />
+        android:text="Name"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#4DFFB2"
-        android:text="@string/title_coefficient_b" />
+        android:background="#D0F0C0"
+        android:text="@string/title_coefficient_b"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif" />
 
     <EditText
         android:id="@+id/edtCoefficientB"
@@ -62,7 +69,9 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="text"
-        android:text="Name" />
+        android:text="Name"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -75,7 +84,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/title_solution" />
+            android:text="@string/title_solution"
+            android:textColor="#FFFFFF"
+            android:background="#4285F4"
+            android:fontFamily="sans-serif" />
 
         <Button
             android:onClick="do_next"
@@ -83,7 +95,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/title_Next" />
+            android:text="@string/title_Next"
+            android:textColor="#FFFFFF"
+            android:background="#34A853"
+            android:fontFamily="sans-serif" />
 
         <Button
             android:onClick="do_exit"
@@ -91,20 +106,26 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/title_Exit" />
-
+            android:text="@string/title_Exit"
+            android:textColor="#FFFFFF"
+            android:background="#EA4335"
+            android:fontFamily="sans-serif" />
     </LinearLayout>
 
     <TextView
         android:id="@+id/textView7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/title_Result" />
+        android:text="@string/title_Result"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif" />
 
     <TextView
         android:id="@+id/txtResult"
         android:layout_width="match_parent"
         android:layout_height="87dp"
-        android:background="#F4F278" />
+        android:background="#FFF9C4"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif" />
 
 </LinearLayout>
